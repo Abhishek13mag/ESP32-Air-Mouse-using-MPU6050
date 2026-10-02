@@ -1,6 +1,6 @@
 # ESP32 Air Mouse using MPU6050
 
-## 📌 Project Overview
+##  Project Overview
 
 The **ESP32 Air Mouse** is a wireless motion-controlled mouse that allows users to control a computer cursor through hand movements without using a conventional physical mouse.
 
@@ -8,7 +8,7 @@ The project uses an **ESP32 microcontroller**, an **MPU6050 accelerometer and gy
 
 By tilting or rotating the device, users can move the cursor on a connected computer. Two push buttons are implemented for left and right mouse clicks.
 
-## 🎯 Features
+##  Features
 
 * Wireless mouse functionality using Bluetooth Low Energy (BLE).
 * Motion-based cursor control using the MPU6050 gyroscope.
@@ -18,7 +18,7 @@ By tilting or rotating the device, users can move the cursor on a connected comp
 * Adjustable cursor sensitivity.
 * Approximately 100 Hz mouse update rate.
 
-## 🛠️ Hardware Requirements
+##  Hardware Requirements
 
 | Component                         |    Quantity |
 | --------------------------------- | ----------: |
@@ -28,7 +28,7 @@ By tilting or rotating the device, users can move the cursor on a connected comp
 | Jumper Wires                      | As required |
 | USB Cable                         |           1 |
 
-## 🔌 Circuit Connections
+##  Circuit Connections
 
 ### MPU6050 to ESP32
 
@@ -48,7 +48,7 @@ By tilting or rotating the device, users can move the cursor on a connected comp
 
 **Note:** The push buttons are connected between their respective GPIO pins and GND. The code uses the ESP32's internal pull-up resistors (`INPUT_PULLUP`).
 
-## 💻 Software Requirements
+##  Software Requirements
 
 * Arduino IDE
 * ESP32 Board Package
@@ -97,7 +97,7 @@ The filtered gyroscope readings are multiplied by a sensitivity factor and conve
 
 The ESP32 sends mouse movement and button press/release commands to the paired computer through BLE HID functionality.
 
-## 🧠 Algorithm
+##  Algorithm
 
 ```text
 START
@@ -131,7 +131,7 @@ Send Mouse Click Commands
 Repeat
 ```
 
-## 🎛️ Configurable Parameters
+##  Configurable Parameters
 
 The following parameters can be modified to adjust cursor behaviour.
 
@@ -149,7 +149,7 @@ The following parameters can be modified to adjust cursor behaviour.
 * Increase `DEADZONE` to reduce unwanted cursor movements.
 * Change the movement signs if the cursor direction is inverted due to sensor orientation.
 
-## 🚀 How to Upload and Use
+##  How to Upload and Use
 
 1. Connect the ESP32 to your computer using a USB cable.
 2. Open the Arduino IDE.
@@ -164,7 +164,7 @@ The following parameters can be modified to adjust cursor behaviour.
 11. Move the ESP32 to control the cursor.
 12. Use the two push buttons for left and right clicks.
 
-## 📚 Technologies Used
+##  Technologies Used
 
 * Embedded C/C++
 * ESP32 Microcontroller
@@ -174,7 +174,7 @@ The following parameters can be modified to adjust cursor behaviour.
 * Human Interface Device (HID) Protocol
 * Arduino IDE
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 * Implement accelerometer and gyroscope sensor fusion.
 * Add advanced noise filtering for improved cursor stability.
@@ -183,7 +183,7 @@ The following parameters can be modified to adjust cursor behaviour.
 * Develop a rechargeable and compact PCB-based design.
 * Improve cursor control using orientation estimation.
 
-## 👨‍💻 Author
+##  Author
 
 **Abhishek A Nair**
 
